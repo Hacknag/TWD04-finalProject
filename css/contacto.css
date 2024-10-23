@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorBlanco: #fff;
+    --colorNegro: #000;
+    --colorPrincipal: #d5daec;
+    --colorSecundario: #0F4CDB;
+    --colorTerciario: #ea585a;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+TAS+Beginner:wght@400..700&family=Grey+Qo&family=Major+Mono+Display&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+TAS+Beginner:wght@400..700&family=Grey+Qo&family=Major+Mono+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Style+Script&display=swap');
+
+
+
+/* .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+/* .montserrat-<uniquifier> {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+   */
+
+body {
+    background-image: url(../img/fondoContacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+    overflow-x: hidden;
+}
+
+h1 {
+    color: var(--colorBlanco);
+    font-weight: normal;
+}
+
+input {
+    background-color: transparent;
+    color: var(--colorBlanco);
+    border: var(--colorBlanco) solid 2px;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: var(--colorNegro);
+}
+
+textarea {
+    resize: none;
+    background-color: transparent;
+    color: var(--colorBlanco);
+    border: var(--colorBlanco) solid 2px;
+    border-radius: 5px;
+    width: 440px;
+    height: 150px;
+    display: block;
+    margin: 10px auto;
+    padding-left: 10px;
+}
+
+#email {
+    display: block;
+    margin: 10px auto;
+    padding: 5px 130px;
+    text-align: center;
+}
+
+#nombre, #apellido {
+    padding: 5px 15px;
+    margin: 10px 5px;
+}
+
+#boton {
+    padding: 5px 20px;
+    background-color: var(--colorBlanco);
+    color: var(--colorNegro);
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.contacto {
+    height: 100vh !important;
+}
+
+form input, form textarea {
+    background-color: var(--colorBlanco);
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #nombre, #apellido, #email {
+        display: block;
+        margin: 15px auto;
+        padding: 5px 60px;
+        text-align: center;
+    }
+
+    textarea {
+        width: 300px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #nombre, #apellido, #email {
+        display: block;
+        margin: 15px auto;
+        padding: 5px 110px;
+        text-align: center;
+    }
+
+    textarea {
+        width: 400px;
+    }
+}

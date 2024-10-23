@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorBlanco: #fff;
+    --colorNegro: #000;
+    --colorPrincipal: #d5daec;
+    --colorSecundario: #0f4cdb;
+    --colorTerciario: #ea585a;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+TAS+Beginner:wght@400..700&family=Grey+Qo&family=Major+Mono+Display&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+TAS+Beginner:wght@400..700&family=Grey+Qo&family=Major+Mono+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Style+Script&display=swap');
+
+
+
+/* .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+/* .montserrat-<uniquifier> {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+   */
+
+body {
+    background-color: var(--colorPrincipal);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 11px;
+    width: 94%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--colorBlanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.overlay p {
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.image-container:hover .overlay {
+    opacity: 0.6;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.accordion-body {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.accordion-button {
+    border-bottom: var(--colorTerciario) solid 1px;
+}
+
+.accordion-button:focus {
+    background-color: transparent;
+    box-shadow: inherit;
+}
+
+.entrenadores {
+    background-color: var(--colorBlanco);
+}
+
+.entrenadores * {
+    color: var(--colorNegro) !important;
+}
+
+
+.entrenadores .container {
+    width: 100%;
+}
+
+.entrenadores img {
+    width: 200px;
+    border-radius: 100px;
+    margin: 20px 60px;
+    display: inline-block;
+}
+
+.entrenadores h2 {
+    color: var(--colorTerciario) !important;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+.entrenadores h3, .entrenadores p {
+    display: block;
+    color: var(--colorBlanco);
+}
+
+.datos {
+    margin-top: 40px;
+    border-bottom: var(--colorTerciario) solid 1px;
+    margin-bottom: 100px;
+    margin-left: -30px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .overlay {
+        left: 11px;
+    }
+
+    .accordion-body {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: normal;
+    }
+
+    .entrenadores img {
+        margin: 20px 85px;
+    }
+
+    .datos {
+        margin-top: 40px;
+        margin-bottom: 100px;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .entrenadores h2 {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .overlay {
+        left: 14px;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: normal;
+    }
+
+    .entrenadores img {
+        margin: 20px 125px;
+    }
+
+    .datos {
+        margin-top: 40px;
+        margin-bottom: 100px;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .entrenadores h2 {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .overlay {
+        left: 15px;
+        width: 96%;
+    }
+
+    .accordion-body {
+        font-size: 20px;
+    }
+
+    .accordion-button {
+        font-size: 20px;
+    }
+
+    .entrenadores h3 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .entrenadores p {
+        font-size: 20px;
+    }
+}

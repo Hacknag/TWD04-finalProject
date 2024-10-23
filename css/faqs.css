@@ -1,0 +1,134 @@
+:root {
+    ---colorBlanco: #fff;
+    ---colorNegro: #000;
+    ---colorGris: #404040;
+    ---colorPrimario: #D5DAEC;
+    ---colorSecundario: #0F4CDB;
+    ---colorTerciario: #EA585A;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+TAS+Beginner:wght@400..700&family=Grey+Qo&family=Major+Mono+Display&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+TAS+Beginner:wght@400..700&family=Grey+Qo&family=Major+Mono+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Style+Script&display=swap');
+
+
+
+/* .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+/* .montserrat-<uniquifier> {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+   */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(---colorBlanco);
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(---colorPrimario);
+}
+
+
+.faq-sidenav {
+    position: relative;
+}
+
+.faq-sidenav .side-nav-item a {
+    color: var(---colorGris);
+    font-size: 1rem;
+    line-height: 1.188rem;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.faq-header {
+    color: var(---colorNegro);
+    font-size: 2.25rem;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    padding-top: 3rem;
+    text-align: start;
+}
+
+.faq-sidenav .side-nav-item {
+    padding: 12px 40px;
+}
+
+.faq-sidenav .side-nav-item:hover {
+    background-color: var(---colorGris);
+    border-radius: 5px;
+}
+
+.faq-sidenav .side-nav-item:hover a {
+    color: var(---colorBlanco);
+}
+
+.faq-sidenav .card-body {
+    padding: 30px 18px;
+}
+
+.faq-sidenav nav {
+    position: sticky;
+    top: 180px;
+    background-color: var(---colorPrimario);
+
+}
+
+.faq-sidenav {
+    margin-bottom: 64px;
+}
+
+.card {
+    border-radius: 5%;
+}
+
+.faq-accordion-head {
+    color: var(---colorNegro);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.375rem;
+    margin-bottom: 0;
+    padding-right: 0;
+    text-transform: capitalize;
+}
+
+.section-questions h2 {
+    font-size: 45px;
+    color: var(---colorNegro);
+}
+
+.faqs-border-bottom {
+    border-bottom: var(---colorBlanco) solid 1px;
+}
+
+.section-questions .accordion-button {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    color: var(---colorNegro);
+
+}
+
+.section-questions .accordion-button:not(.collapsed) {
+    font-size: 20px;
+    color: var(---colorBlanco);
+    background-color: var(---colorTerciario);
+    font-weight: 400;
+}
+
+.section-questions .accordion-button:focus {
+    box-shadow: none;
+}
